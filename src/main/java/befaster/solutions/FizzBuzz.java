@@ -1,35 +1,28 @@
 package befaster.solutions;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class FizzBuzz {
 
     private static final String FIVE = "5";
     private static final String THREE = "3";
 
-    static Map<Integer,String> dictionary = new HashMap<>();
-
-    static{
-        dictionary.put(3, "fizz");
-        dictionary.put(5, "buzz");
-    }
-
     public static String fizzBuzz(Integer number) {
-
-        dictionary.
-
-        StringBuilder result = new StringBuilder();
+        Set<String> result = new HashSet<>();
 
         if (isFizz(number)) {
-            result.append("fizz");
+            result.add("fizz");
         }
 
         if (isBuzz(number)) {
-            result.append("buzz");
+            result.add("buzz");
         }
 
-        return result.toString();
+        if(result.)
     }
 
     private static boolean isBuzz(Integer number) {
