@@ -7,10 +7,8 @@ import static org.junit.Assert.assertThat;
 
 public class HelloShould {
 
-    private static final String EMPTY = "";
-
     @Test
-    public void return_hello_world() {
-        assertThat(Hello.hello(EMPTY), is("Hello, World!"));
+    public void return_hello_to_param() {
+        assertThat(Hello.hello("John"), is("Hello, John!"));
     }
 }
