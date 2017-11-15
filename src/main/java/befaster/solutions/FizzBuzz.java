@@ -1,5 +1,7 @@
 package befaster.solutions;
 
+import com.google.common.primitives.Chars;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -39,7 +41,11 @@ public class FizzBuzz {
     }
 
     private static boolean digitsAreIdentical(Integer number) {
-        String.valueOf(number).toCharArray()
+        return Chars.asList(String.valueOf(number).toCharArray())
+                .stream()
+                .distinct()
+                .limit(2)
+                .count() <= 1;
     }
 
     private static boolean isBuzz(Integer number) {
