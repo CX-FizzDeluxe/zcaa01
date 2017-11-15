@@ -34,7 +34,7 @@ public class FizzBuzz {
     }
 
     private static boolean isDeluxe(Integer number) {
-        return false;
+        return number > 10 && 
     }
 
     private static boolean isBuzz(Integer number) {
