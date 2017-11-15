@@ -6,15 +6,16 @@ public class FizzBuzz {
     private static final String THREE = "3";
 
     public static String fizzBuzz(Integer number) {
-        if (isFizzBuzz(number)) {
-            return "fizz buzz";
-        } else if (isFizz(number)) {
-            return "fizz";
-        } else if (isBuzz(number)) {
-            return "buzz";
+        StringBuilder result = new StringBuilder();
+
+        if (isFizz(number)) {
+            result.append("fizz");
+        }
+        if (isBuzz(number)) {
+            result.append("buzz");
         }
 
-        return String.valueOf(number);
+        return result.toString();
     }
 
     private static boolean isBuzz(Integer number) {
