@@ -48,7 +48,12 @@ public class FizzBuzzShould {
     }
 
     @Test
-    public void add_deluxe_to_result_if_number_is_greater_than_ten_and_all_numbers_are_identical() {
+    public void return_deluxe_to_result_if_number_is_greater_than_ten_and_all_numbers_are_identical() {
         assertThat(FizzBuzz.fizzBuzz(11), is("deluxe"));
+    }
+
+    @Test
+    public void return_fizz_deluxe__if_number_is_greater_than_ten_and_all_numbers_are_identical_and_contains_three() {
+        assertThat(FizzBuzz.fizzBuzz(333), is("fizz deluxe"));
     }
 }
