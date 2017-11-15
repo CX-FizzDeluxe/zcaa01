@@ -1,11 +1,14 @@
 package befaster.solutions;
 
-import befaster.runner.SolutionNotImplementedException;
-
 public class FizzBuzz {
 
     public static String fizzBuzz(Integer number) {
-        throw new SolutionNotImplementedException();
+
+        if(number % 3 == 0) {
+            return "fizz";
+        }
+
+        return null;
     }
 
 }
