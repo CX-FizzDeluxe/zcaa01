@@ -1,5 +1,6 @@
 package befaster.solutions;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -34,7 +35,11 @@ public class FizzBuzz {
     }
 
     private static boolean isDeluxe(Integer number) {
-        return number > 10 && 
+        return number > 10 && digitsAreIdentical(number);
+    }
+
+    private static boolean digitsAreIdentical(Integer number) {
+        Arrays.stream(String.valueOf(number).toCharArray())
     }
 
     private static boolean isBuzz(Integer number) {
