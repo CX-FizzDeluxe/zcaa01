@@ -6,22 +6,17 @@ public class FizzBuzz {
 
         if(number % 15 == 0) {
             return "fizz buzz";
-        } else if(number % 3 == 0 || containsThree(number)) {
+        } else if(number % 3 == 0 || contains("3", number)) {
             return "fizz";
-        } else if(number % 5 == 0 || containsFive(number)) {
+        } else if(number % 5 == 0 || contains("5", number)) {
             return "buzz";
         }
 
         return String.valueOf(number);
     }
 
-    private static boolean containsFive(Integer number) {
+    private static boolean contains(String value, Integer number) {
         return String.valueOf(number)
-                .contains("5");
-    }
-
-    private static boolean containsThree(Integer number) {
-        return String.valueOf(number)
-                .contains("3");
+                .contains(value);
     }
 }
