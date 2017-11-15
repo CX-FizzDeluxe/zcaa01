@@ -21,12 +21,20 @@ public class FizzBuzz {
             result.add("buzz");
         }
 
+        if(isDeluxe(number)) {
+            result.add("deluxe");
+        }
+
         if (result.isEmpty()) {
             return String.valueOf(number);
         }
 
         return result.stream()
                 .collect(Collectors.joining(SPACE));
+    }
+
+    private static boolean isDeluxe(Integer number) {
+        return false;
     }
 
     private static boolean isBuzz(Integer number) {
