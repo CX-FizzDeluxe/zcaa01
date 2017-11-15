@@ -12,8 +12,13 @@ public class SumShould {
         assertThat(Sum.sum(1, 1), equalTo(2));
     }
 
-    @Test
-    public void throw_an_exception_when_first_param_is_not_betwee_zero_and_100() {
-        assertThat(, is());
+    @Test(expected = RuntimeException.class)
+    public void throw_an_exception_when_first_param_is_not_between_zero_and_100() {
+        Sum.sum(-1, 1);
+    }
+
+    @Test(expected = RuntimeException.class)
+    public void throw_an_exception_when_second_param_is_not_between_zero_and_100() {
+        Sum.sum(1, 101);
     }
 }
