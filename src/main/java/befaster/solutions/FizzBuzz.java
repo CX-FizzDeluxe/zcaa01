@@ -8,15 +8,20 @@ public class FizzBuzz {
             return "fizz buzz";
         } else if(number % 3 == 0 || containsThree(number)) {
             return "fizz";
-        } else if(number % 5 == 0) {
+        } else if(number % 5 == 0 || containsFive(number)) {
             return "buzz";
         }
 
         return String.valueOf(number);
     }
 
+    private static boolean containsFive(Integer number) {
+        return String.valueOf(number)
+                .contains("5");
+    }
+
     private static boolean containsThree(Integer number) {
         return String.valueOf(number)
-                .contentEquals("3");
+                .contains("3");
     }
 }
