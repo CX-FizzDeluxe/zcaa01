@@ -1,11 +1,24 @@
 package befaster.solutions;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class FizzBuzz {
 
     private static final String FIVE = "5";
     private static final String THREE = "3";
 
+    static Map<Integer,String> dictionary = new HashMap<>();
+
+    static{
+        dictionary.put(3, "fizz");
+        dictionary.put(5, "buzz");
+    }
+
     public static String fizzBuzz(Integer number) {
+
+        dictionary.
+
         StringBuilder result = new StringBuilder();
 
         if (isFizz(number)) {
