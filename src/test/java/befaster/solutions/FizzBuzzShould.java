@@ -13,6 +13,11 @@ public class FizzBuzzShould {
     }
 
     @Test
+    public void return_fizz_when_given_number_has_a_three_in_it() {
+        assertThat(FizzBuzz.fizzBuzz(63), is("fizz"));
+    }
+
+    @Test
     public void return_buzz_when_given_number_is_multiple_of_five() {
         assertThat(FizzBuzz.fizzBuzz(5), is("buzz"));
     }
