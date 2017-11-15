@@ -11,6 +11,7 @@ public class FizzBuzz {
         if (isFizz(number)) {
             result.append("fizz");
         }
+
         if (isBuzz(number)) {
             result.append("buzz");
         }
