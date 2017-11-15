@@ -3,14 +3,12 @@ package befaster.solutions;
 public class FizzBuzz {
 
     public static String fizzBuzz(Integer number) {
-        StringBuilder result = new StringBuilder();
-
-        if (number % 15 == 0) {
-            result.append("fizz buzz");
+        if (number % 15 == 0 || (contains("3", number) && contains("5", number))) {
+            return "fizz buzz";
         } else if (number % 3 == 0 || contains("3", number)) {
-            result.append("fizz");
+            return "fizz";
         } else if (number % 5 == 0 || contains("5", number)) {
-            result.append("buzz");
+            "buzz";
         } else {
             result.append(number);
         }
