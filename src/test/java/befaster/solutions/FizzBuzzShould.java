@@ -33,8 +33,8 @@ public class FizzBuzzShould {
     }
 
     @Test
-    public void return_fizz_buzz_when_given_number_is_multiple_of_three_and_five() {
-        assertThat(FizzBuzz.fizzBuzz(15), is("fizz buzz"));
+    public void return_fizz_buzz_when_given_number_contains_both_three_and_five() {
+        assertThat(FizzBuzz.fizzBuzz(53), is("fizz buzz"));
     }
 
     @Test
