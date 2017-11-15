@@ -1,15 +1,14 @@
 package befaster.solutions;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class FizzBuzz {
 
     private static final String FIVE = "5";
     private static final String THREE = "3";
+    private static final String SPACE = " ";
 
     public static String fizzBuzz(Integer number) {
         Set<String> result = new HashSet<>();
@@ -22,7 +21,12 @@ public class FizzBuzz {
             result.add("buzz");
         }
 
-        if(result.)
+        if (result.isEmpty()) {
+            return String.valueOf(number);
+        }
+
+        return result.stream()
+                .collect(Collectors.joining(SPACE));
     }
 
     private static boolean isBuzz(Integer number) {
@@ -31,10 +35,6 @@ public class FizzBuzz {
 
     private static boolean isFizz(Integer number) {
         return number % 3 == 0 || contains(THREE, number);
-    }
-
-    private static boolean isFizzBuzz(Integer number) {
-        return number % 15 == 0 || (contains(THREE, number) && contains(FIVE, number));
     }
 
     private static boolean contains(String value, Integer number) {
