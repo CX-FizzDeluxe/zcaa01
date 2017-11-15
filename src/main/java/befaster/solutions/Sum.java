@@ -3,11 +3,15 @@ package befaster.solutions;
 public class Sum {
 
     public static int sum(int x, int y) {
-        if((x < 0 || x > 100) || (y < 0 || y > 100)) {
+        if(isInvalid(x) || (isInvalid(y))) {
             throw new RuntimeException();
         }
-        
+
         return x + y;
+    }
+
+    private static boolean isInvalid(int number) {
+        return number < 0 || number > 100;
     }
 
 }
