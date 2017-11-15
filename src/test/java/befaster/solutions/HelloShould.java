@@ -11,6 +11,6 @@ public class HelloShould {
 
     @Test
     public void return_hello_world() {
-        assertThat(Hello.hello(EMPTY), is("Hello world!"));
+        assertThat(Hello.hello(EMPTY), is("Hello, World!"));
     }
 }
