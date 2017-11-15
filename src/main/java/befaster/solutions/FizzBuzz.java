@@ -39,7 +39,7 @@ public class FizzBuzz {
     }
 
     private static boolean digitsAreIdentical(Integer number) {
-        Arrays.stream(String.valueOf(number).toCharArray())
+        String.valueOf(number).toCharArray()
     }
 
     private static boolean isBuzz(Integer number) {
