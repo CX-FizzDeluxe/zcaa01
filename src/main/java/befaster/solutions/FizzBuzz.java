@@ -2,8 +2,10 @@ package befaster.solutions;
 
 import com.google.common.primitives.Chars;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -14,7 +16,7 @@ public class FizzBuzz {
     private static final String SPACE = " ";
 
     public static String fizzBuzz(Integer number) {
-        Set<String> result = new HashSet<>();
+        List<String> result = new ArrayList<>();
 
         if (isFizz(number)) {
             result.add("fizz");
