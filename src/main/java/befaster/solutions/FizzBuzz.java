@@ -14,17 +14,11 @@ public class FizzBuzz {
         List<String> result = new ArrayList<>();
 
         if (isFizz(number)) {
-//            result.add("fizz");
-//            if(isDeluxe(number, 3, THREE)) {
-//                result.add("deluxe");
-//            }
+            addToResult(number, result, "fizz", 3, THREE);
         }
 
         if (isBuzz(number)) {
-            result.add("buzz");
-            if(isDeluxe(number, 5, FIVE)) {
-                result.add("deluxe");
-            }
+            addToResult(number, result, "buzz", 5, FIVE);
         }
 
         if (result.isEmpty()) {
@@ -33,6 +27,13 @@ public class FizzBuzz {
 
         return result.stream()
                 .collect(Collectors.joining(SPACE));
+    }
+
+    private static void addToResult(Integer number, List<String> result, String fizz, int multiple, String three) {
+        result.add(fizz);
+        if (isDeluxe(number, multiple, three)) {
+            result.add("deluxe");
+        }
     }
 
     private static boolean isDeluxe(Integer number, Integer multiple, String toContain) {
