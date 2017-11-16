@@ -46,21 +46,4 @@ public class FizzBuzzShould {
     public void return_the_number_when_given_number_is_not_multiple_of_three_or_five() {
         assertThat(FizzBuzz.fizzBuzz(1), is("1"));
     }
-
-    @Test
-    public void return_deluxe_to_result_if_number_is_greater_than_ten_and_all_numbers_are_identical() {
-        assertThat(FizzBuzz.fizzBuzz(44), is("deluxe"));
-    }
-
-    @Test
-    public void return_fizz_deluxe_if_number_is_greater_than_ten_and_all_numbers_are_identical_and_contains_three() {
-        assertThat(FizzBuzz.fizzBuzz(66), is("fizz deluxe"));
-    }
-
-    @Test
-    public void return_fake_deluxe_if_number_is_greater_than_ten_and_all_numbers_are_identical_and_is_odd() {
-        assertThat(FizzBuzz.fizzBuzz(1111), is("fake deluxe"));
-    }
-
-
 }

@@ -26,13 +26,6 @@ public class FizzBuzz {
             result.add("buzz");
         }
 
-        if(isDeluxe(number)) {
-            if(number % 2 != 0) {
-                result.add("fake");
-            }
-            result.add("deluxe");
-        }
-
         if (result.isEmpty()) {
             return String.valueOf(number);
         }
