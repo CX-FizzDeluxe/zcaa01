@@ -34,18 +34,6 @@ public class FizzBuzz {
                 .collect(Collectors.joining(SPACE));
     }
 
-    private static boolean isDeluxe(Integer number) {
-        return number > 10 && digitsAreIdentical(number);
-    }
-
-    private static boolean digitsAreIdentical(Integer number) {
-        return Chars.asList(String.valueOf(number).toCharArray())
-                .stream()
-                .distinct()
-                .limit(2)
-                .count() <= 1;
-    }
-
     private static boolean isBuzz(Integer number) {
         return number % 5 == 0 || contains(FIVE, number);
     }
