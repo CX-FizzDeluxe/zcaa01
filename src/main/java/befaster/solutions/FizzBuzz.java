@@ -27,6 +27,9 @@ public class FizzBuzz {
         }
 
         if(isDeluxe(number)) {
+            if(number % 2 != 0) {
+                result.add("fake");
+            }
             result.add("deluxe");
         }
 
