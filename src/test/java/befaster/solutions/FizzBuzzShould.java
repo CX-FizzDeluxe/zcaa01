@@ -49,12 +49,12 @@ public class FizzBuzzShould {
 
     @Test
     public void return_deluxe_to_result_if_number_is_greater_than_ten_and_all_numbers_are_identical() {
-        assertThat(FizzBuzz.fizzBuzz(77), is("deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(44), is("deluxe"));
     }
 
     @Test
     public void return_fizz_deluxe_if_number_is_greater_than_ten_and_all_numbers_are_identical_and_contains_three() {
-        assertThat(FizzBuzz.fizzBuzz(333), is("fizz deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(66), is("fizz deluxe"));
     }
 
     @Test
