@@ -15,13 +15,16 @@ public class FizzBuzz {
 
         if (isFizz(number)) {
             result.add("fizz");
-            if(isDeluxe(number)) {
+            if(isDeluxe(number, 3, THREE)) {
                 result.add("deluxe");
             }
         }
 
         if (isBuzz(number)) {
             result.add("buzz");
+            if(isDeluxe(number, 5, FIVE)) {
+                result.add("deluxe");
+            }
         }
 
         if (result.isEmpty()) {
@@ -33,7 +36,7 @@ public class FizzBuzz {
     }
 
     private static boolean isDeluxe(Integer number, Integer multiple, String toContain) {
-        return number % multiple == && contains(toContain, number);
+        return number % multiple == 0 && contains(toContain, number);
     }
 
     private static boolean isBuzz(Integer number) {

@@ -51,4 +51,9 @@ public class FizzBuzzShould {
     public void return_fizz_deluxe_when_given_number_is_multiple_of_three_and_contains_three() {
         assertThat(FizzBuzz.fizzBuzz(33), is("fizz deluxe"));
     }
+
+    @Test
+    public void return_buzz_deluxe_when_given_number_is_multiple_of_five_and_contains_five() {
+        assertThat(FizzBuzz.fizzBuzz(35), is("buzz deluxe"));
+    }
 }
