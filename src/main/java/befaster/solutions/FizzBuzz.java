@@ -14,10 +14,10 @@ public class FizzBuzz {
         List<String> result = new ArrayList<>();
 
         if (isFizz(number)) {
-            result.add("fizz");
-            if(isDeluxe(number, 3, THREE)) {
-                result.add("deluxe");
-            }
+//            result.add("fizz");
+//            if(isDeluxe(number, 3, THREE)) {
+//                result.add("deluxe");
+//            }
         }
 
         if (isBuzz(number)) {
