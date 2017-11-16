@@ -19,7 +19,7 @@ public class FizzBuzzShould {
 
     @Test
     public void return_buzz_when_given_number_is_multiple_of_five() {
-        assertThat(FizzBuzz.fizzBuzz(5), is("buzz"));
+        assertThat(FizzBuzz.fizzBuzz(10), is("buzz"));
     }
 
     @Test
@@ -29,7 +29,7 @@ public class FizzBuzzShould {
 
     @Test
     public void return_fizz_buzz_when_given_number_is_multiple_of_three_and_five() {
-        assertThat(FizzBuzz.fizzBuzz(15), is("fizz buzz"));
+        assertThat(FizzBuzz.fizzBuzz(60), is("fizz buzz"));
     }
 
     @Test
@@ -54,6 +54,6 @@ public class FizzBuzzShould {
 
     @Test
     public void return_buzz_deluxe_when_given_number_is_multiple_of_five_and_contains_five() {
-        assertThat(FizzBuzz.fizzBuzz(35), is("buzz deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(85), is("buzz deluxe"));
     }
 }
