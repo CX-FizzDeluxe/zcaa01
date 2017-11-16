@@ -53,7 +53,14 @@ public class FizzBuzzShould {
     }
 
     @Test
-    public void return_fizz_deluxe__if_number_is_greater_than_ten_and_all_numbers_are_identical_and_contains_three() {
+    public void return_fizz_deluxe_if_number_is_greater_than_ten_and_all_numbers_are_identical_and_contains_three() {
         assertThat(FizzBuzz.fizzBuzz(333), is("fizz deluxe"));
     }
+
+    @Test
+    public void return_fake_deluxe_if_number_is_greater_than_ten_and_all_numbers_are_identical_and_is_odd() {
+        assertThat(FizzBuzz.fizzBuzz(111), is("fake deluxe"));
+    }
+
+
 }
